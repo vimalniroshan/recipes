@@ -1,5 +1,6 @@
 package com.recipes;
 
+import com.recipes.model.Recipe;
 import com.recipes.service.RecipesService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,9 +17,10 @@ public class TestSpring {
 
         RecipesService service = (RecipesService) context.getBean("recipesService");
 
-        service.saveRecipe();
+        service.addRecipe(new Recipe("1", "2"));
 
-        System.out.print("Done");
+
+        System.out.print("Done" + service.getAllRecipes());
     }
 
 }

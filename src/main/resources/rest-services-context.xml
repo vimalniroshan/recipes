@@ -20,7 +20,7 @@
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
 
-    <jaxrs:server id="recipesServices" address="/">
+    <jaxrs:server id="recipesServices">
         <jaxrs:serviceBeans>
             <ref bean="recipesService"/>
         </jaxrs:serviceBeans>

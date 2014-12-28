@@ -2,6 +2,7 @@ package com.recipes.model;
 
 
 import javax.persistence.*;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * @author: vimal.sengoden
@@ -10,6 +11,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "RECIPE")
+@XmlRootElement(name = "Recipe")
 public class Recipe {
     @Id
     @GeneratedValue

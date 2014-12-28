@@ -18,8 +18,8 @@ import java.util.List;
  */
 
 @Path("services")
-@Service
 @Transactional
+@Service
 public class RecipesService {
 
     @Autowired
